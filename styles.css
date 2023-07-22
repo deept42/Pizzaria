@@ -53,8 +53,8 @@
   
   /* Estilos específicos para a página inicial */
   #home {
-    background-image: url('img/543-pizza-1.svg.png');
-    background-size: cover;
+    background-image:url('img/106754389-pizza-vector-icon-isolated-on-transparent-background-pizza-logo-concept.webp');
+    background-size:40px;
     background-position: center;
     height: 400px;
     display: flex;
@@ -64,7 +64,11 @@
     text-align: center;
     color: #fff;
   }
-  
+
+  /* Irá reescrever a propriedade do background image pra deixar transparente... eu espero 
+  #home {
+    
+  } 
   .hero h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
