@@ -8,13 +8,9 @@
 </head>
 <body>
   <header>
-    
     <div id="logo">
         <img src="img/Novo Projeto (3).png" alt="">
-
     </div>
-
-    
     <nav>
       <ul>
         <li><a href="#about">Sobre nós</a></li>
@@ -24,7 +20,6 @@
       </ul>
     </nav>
   </header>
-
   <main>
     <section id="home">
       <div class="hero">
@@ -33,7 +28,6 @@
         <a href="#menu" class="cta-button">Ver Cardápio</a>
       </div>
     </section>
-
     <section id="about">
       <div class="content">
         <h2>Sobre nós</h2>
@@ -41,12 +35,61 @@
         <!-- Conteúdo sobre o restaurante -->
       </div>
     </section>
-
     <section id="menu">
       <div class="content">
         <h2>Cardápio</h2>
         <p>Aprecie nossos pratos deliciosos preparados com ingredientes frescos.</p>
         <!-- Conteúdo do cardápio -->
+          <button onclick="showMenu('todos')">Todos</button>
+          <button onclick="showMenu('pizzaTradicional1')">Pizza Tradicional 1</button>
+          <button onclick="showMenu('pizzaTradicional2')">Pizza Tradicional 2</button>
+          <button onclick="showMenu('premium')">Pizza Premium</button>
+          <button onclick="showMenu('doce')">Pizza Doce</button>
+          <div id="todos" class="menu">
+            <!-- Conteúdo do cardápio de pizza -->
+            <h2>Cardápio de Pizza</h2>
+            <ul>
+              <li>Margherita - R$ 25,00</li>
+              <li>Pepperoni - R$ 28,00</li>
+              <li>Calabresa - R$ 26,00</li>
+            </ul>
+          </div>
+          <div id="pizzaTradicional1" class="menu">
+            <!-- Conteúdo do cardápio de pizza -->
+            <h2>Cardápio de Pizza</h2>
+            <ul>
+              <li>Margherita - R$ 25,00</li>
+              <li>Pepperoni - R$ 28,00</li>
+              <li>Calabresa - R$ 26,00</li>
+            </ul>
+          </div>
+          <div id="pizzaTradicional2" class="menu">
+            <!-- Conteúdo do cardápio de pizza -->
+            <h2>Cardápio de Pizza</h2>
+            <ul>
+              <li>Margherita - R$ 25,00</li>
+              <li>Pepperoni - R$ 28,00</li>
+              <li>Calabresa - R$ 26,00</li>
+            </ul>
+          </div>
+          <div id="premium" class="menu">
+            <!-- Conteúdo do cardápio de hambúrguer -->
+            <h2>Cardápio de Hambúrguer</h2>
+            <ul>
+              <li>X-Burger - R$ 15,00</li>
+              <li>X-Salada - R$ 18,00</li>
+              <li>X-Bacon - R$ 20,00</li>
+            </ul>
+          </div>
+          <div id="doce" class="menu">
+            <!-- Conteúdo do cardápio de hambúrguer -->
+            <h2>Cardápio de Hambúrguer</h2>
+            <ul>
+              <li>X-Burger - R$ 15,00</li>
+              <li>X-Salada - R$ 18,00</li>
+              <li>X-Bacon - R$ 20,00</li>
+            </ul>
+          </div>
       </div>
     </section>
 
@@ -63,7 +106,7 @@
         <h2>Contato</h2>
         <p>Entre em contato conosco para reservas ou qualquer dúvida.</p>
         <form id="contact-form" action="#" method="post">
-          <input type="text" name="name" placeholder="Nome" required>
+          </  type="text" name="name" placeholder="Nome" required>
           <input type="email" name="email" placeholder="E-mail" required>
           <textarea name="message" placeholder="Mensagem" required></textarea>
           <button type="submit">Enviar</button>
