@@ -24,7 +24,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
   });
 
   //funcao pra fazer a porcaria do cardapio que demorou pra porra
-  function showMenu(menuId) {
+  function mostrarMenu(menuId) {
     // Oculta todos os menus
     var menus = document.getElementsByClassName('menu');
     for (var i = 0; i < menus.length; i++) {
