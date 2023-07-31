@@ -7,15 +7,13 @@
   
   /* Estilos gerais */
   body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
   }
   
   header {
     background-color: #0c0c0c;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 1rem 0;
   }
@@ -33,9 +31,10 @@
     margin-right: 1rem;
   }
   
+  /* menu navegaç~çao*/
   nav a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
   }
   
   main {
@@ -63,43 +62,45 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
   }
   
   .hero h2 {
-    font-size: 2rem;
+    padding: 2%;
+    font-size: 2.8rem;
+    font-weight: 300;
+    font-family: 'Lobster', cursive;
+    text-shadow:  2px 4px rgb(231, 231, 231);
     margin-bottom: 1rem;
-    color:black
+    color:#000000;
   }
   
   .hero p {
-    font-size: 1.2rem;
+    font-size: 1.9rem;
+    font-weight: 100;
+    font-style: italic;
     margin-bottom: 2rem;
-    color:black;
+    color:#000000;
+    font-family: 'Lobster', cursive;
   }
   
   .cta-button {
     display: inline-block;
-    background-color: #ff5500;
+    background-color: #F21B2D;
     color: #fff;
+    font-size: 23px;
+    padding-top: 30px;
+    font-family: 'lobster', sans-serif;
     text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 5px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
     transition: background-color 0.2s ease;
   }
   
   .cta-button:hover {
-    background-color: #ff7700;
+    background-color: #F25D27;
   }
-  
-  /* Estilos específicos para a página "Sobre nós" */
-  /* ... */
-  
-  /* Estilos específicos para a página "Cardápio" */
-  /* ... */
-  
-  /* Estilos específicos para a página "Entrega" */
-  /* ... */
   
   /* Estilos específicos para a página "Contato" */
   #contact-form {
