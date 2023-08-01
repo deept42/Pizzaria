@@ -52,11 +52,40 @@
     text-align: center;
     padding: 1rem 0;
   }
+
+  #logo >img{
+    padding:5px 5px 0 0;
+  }
+
+
+  .container {
+    display:flex;
+  }
+
+  #contentAll {
+    flex: 1;
+    padding: 100px;
+    text-align: right;
+  }
+
+  .content1 > h2 {
+    padding-top: 4.3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+  }
   
+  .content1 > p {
+    font-family: 'Prata', serif;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+
   /* Estilos específicos para a página inicial */
   #home {
     background-position: center;
-    height: 400%;
+    background-image: url("img/pexels-nataliya-vaitkevich-5792328.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +93,7 @@
     text-align: center;
     color: #ffffff;
   }
-  
+
   .hero h2 {
     padding: 2%;
     font-size: 2.8rem;
