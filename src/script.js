@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
   const container = document.querySelector(".container");
   const toggleButton = document.createElement("button");
-  toggleButton.innerText = "Modo Claro";
+  const sunIcon = "☀️";
+  const moonIcon = "🌙";
+  toggleButton.innerHTML = sunIcon;
   toggleButton.id = "toggleButton";
   toggleButton.classList.add("toggle-button");
   container.appendChild(toggleButton);
@@ -11,9 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
       body.classList.toggle("dark-mode");
 
       if (body.classList.contains("dark-mode")) {
-          toggleButton.innerText = "Modo Claro";
+          toggleButton.innerHTML = moonIcon;
       } else {
-          toggleButton.innerText = "Modo Escuro";
+          toggleButton.innerHTML = sunIcon;
       }
   });
 });
+
