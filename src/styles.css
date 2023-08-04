@@ -124,3 +124,29 @@ footer {
 }
 
 
+/* ... Estilos anteriores ... */
+
+
+/* Estilo do botão de reservas */
+.botaoCardapio {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4f4f4f;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.4s;
+}
+
+.botaoCardapio:hover {
+  background-color: #333;
+}
+
+.dark-mode .botaoCardapio {
+  background-color: #dcdcdc;
+  color: #000;
+}
+
+/* ... Restante dos estilos ... */
