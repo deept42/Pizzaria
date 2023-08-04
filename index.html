@@ -1,201 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurante Exemplo</title>
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="src/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Prata&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Restaurante</title>
+    <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
-  <header>
-    <div id="logo">
-        <img src="img/pngwing.com (5).png" width="200">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#about">Sobre nós</a></li>
-        <li><a href="#menu">Cardápio</a></li>
-        <li><a href="#delivery">Delivery</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="home">
-      <div class="hero">
-        <h2>Sabor de Tradição:<br>Uma Pizzaria com História!</h2>
-        <p>Saboreie o melhor da tradição e frescor em cada fatia!</p>
-        <a href="#menu" class="cta-button">Cardápio</a>
-      </div>
-    </section>
-    <section id="about" class="container">
-      <div class="content1" id="contentAll">
-        <h2>Sobre nós</h2>
-        <p>Nossa história começa com a paixão de nossa equipe por pizza, que é transmitida a cada cliente que entra pela nossa porta. Somos uma equipe dedicada e apaixonada, empenhada em proporcionar um atendimento amigável e acolhedor, onde você será recebido como parte de nossa família.</p>
-      </div>
-      <div class="content2" id="contentAll">
-        <img src="img/pngwing.com (4).png" width="400rem">
-      </div>
-    </section>
-    <section id="menu">
-      <div class="content">
-        <h2>Cardápio</h2>
-        <p>Aprecie nossos pratos deliciosos preparados com ingredientes frescos.</p>
-        <!-- Conteúdo do cardápio -->
-          <button onclick="mostrarMenu('todos')">Todos</button>
-          <button onclick="mostrarMenu('pizzaTradicional1')">Pizza Tradicional 1</button>
-          <button onclick="mostrarMenu('pizzaTradicional2')">Pizza Tradicional 2</button>
-          <button onclick="mostrarMenu('premium')">Pizza Premium</button>
-          <button onclick="mostrarMenu('doce')">Pizza Doce</button>
-          <button onclick="mostrarMenu('refrigerante')">Refrigerante</button>
-          <div id="todos" class="menu">
-            <!-- Conteúdo do cardápio de pizza -->
-            <h2>Cardápio Pizza Tradicional 1</h2>
+    <header>
+        <nav>
             <ul>
-              <li>Pepperoni - R$ 28,00</li>
-              <li>Mussarela - R$ 25,00</li>
-              <li>Calabresa - R$ 26,00</li>
-              <li>Margherita - R$ 27,00</li>
-              <li>Quatro Queijos - R$ 30,00</li>
-              <li>Frango com Catupiry - R$ 29,00</li>
-              <li>Portuguesa - R$ 31,00</li>
-              <li>Bacon com Milho - R$ 28,00</li>
-              <li>Atum - R$ 30,00</li>
-              <li>Rúcula com Tomate Seco - R$ 32,00</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="promocoes.html">Promoções</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
             </ul>
-            <h2>Cardápio Pizza Tradicional 2</h2>
-            <ul>
-              <li>Pepperoni - R$ 28,00</li>
-              <li>Margherita - R$ 27,00</li>
-              <li>Frango com Cream Cheese - R$ 29,00</li>
-              <li>Champignon com Queijo Brie - R$ 32,00</li>
-              <li>Vegetariana - R$ 26,00</li>
-              <li>Calabresa com Cebola Roxa - R$ 30,00</li>
-              <li>Bolonhesa - R$ 31,00</li>
-              <li>Peito de Peru com Abacaxi - R$ 29,00</li>
-              <li>Camarão com Catupiry - R$ 35,00</li>
-              <li>Chocolate com Morango - R$ 25,00</li>
-            </ul>
-            <h2>Cardápio pizza Premium</h2>
-            <ul>
-              <li>Trufada de Wagyu - R$ 28,00</li>
-              <li>Gourmet de Lagosta - R$ 35,00</li>
-              <li>Delícia de Foie Gras - R$ 32,00</li>
-              <li>Prosciutto com Peras - R$ 30,00</li>
-              <li>Vegetariana com Queijo de Cabra - R$ 27,00</li>
-            </ul>
-            <h2>Cardápio de pizza Doce</h2>
-            <ul>
-              <li>Pizza de Nutella com Morangos - R$ 25,00</li>
-              <li>Pizza de Chocolate Branco com Frutas Vermelhas - R$ 27,00</li>
-              <li>Pizza de Banana com Canela e Leite Condensado - R$ 23,00</li>
-              <li>Pizza de Maçã com Creme de Baunilha - R$ 26,00</li>
-              <li>Pizza de Romeu e Julieta (Goiabada com Queijo) - R$ 24,00</li>
-            </ul>
-            <h2>Refrigerantes 3lts</h2>
-            <ul>
-              <li>Coca-Cola - R$ 12,00</li>
-              <li>Guaraná Antarctica - R$ 12,00</li>
-              <li>Fanta Laranja - R$ 12,00</li>
-            </ul>
-          </div>
-          <div id="pizzaTradicional1" class="menu">
-            <!-- Conteúdo do cardápio de pizza -->
-            <h2>Cardápio Pizza Tradicional 1</h2>
-            <ul>
-              <li>Pepperoni - R$ 28,00</li>
-              <li>Mussarela - R$ 25,00</li>
-              <li>Calabresa - R$ 26,00</li>
-              <li>Margherita - R$ 27,00</li>
-              <li>Quatro Queijos - R$ 30,00</li>
-              <li>Frango com Catupiry - R$ 29,00</li>
-              <li>Portuguesa - R$ 31,00</li>
-              <li>Bacon com Milho - R$ 28,00</li>
-              <li>Atum - R$ 30,00</li>
-              <li>Rúcula com Tomate Seco - R$ 32,00</li>
-            </ul>
-          </div>
-          <div id="pizzaTradicional2" class="menu">
-            <!-- Conteúdo do cardápio de pizza -->
-            <h2>Cardápio Pizza Tradicional 2</h2>
-            <ul>
-              <li>Pepperoni - R$ 28,00</li>
-              <li>Margherita - R$ 27,00</li>
-              <li>Frango com Cream Cheese - R$ 29,00</li>
-              <li>Champignon com Queijo Brie - R$ 32,00</li>
-              <li>Vegetariana - R$ 26,00</li>
-              <li>Calabresa com Cebola Roxa - R$ 30,00</li>
-              <li>Bolonhesa - R$ 31,00</li>
-              <li>Peito de Peru com Abacaxi - R$ 29,00</li>
-              <li>Camarão com Catupiry - R$ 35,00</li>
-              <li>Chocolate com Morango - R$ 25,00</li>
-            </ul>
-          </div>
-          <div id="premium" class="menu">
-            <!-- Conteúdo do cardápio de hambúrguer -->
-            <h2>Cardápio pizza Premium</h2>
-            <ul>
-              <li>Trufada de Wagyu - R$ 28,00</li>
-              <li>Gourmet de Lagosta - R$ 35,00</li>
-              <li>Delícia de Foie Gras - R$ 32,00</li>
-              <li>Prosciutto com Peras - R$ 30,00</li>
-              <li>Vegetariana com Queijo de Cabra - R$ 27,00</li>
-            </ul>
-          </div>
-          <div id="doce" class="menu">
-            <!-- Conteúdo do cardápio de hambúrguer -->
-            <h2>Cardápio de pizza Doce</h2>
-            <ul>
-              <li>Pizza de Nutella com Morangos - R$ 25,00</li>
-              <li>Pizza de Chocolate Branco com Frutas Vermelhas - R$ 27,00</li>
-              <li>Pizza de Banana com Canela e Leite Condensado - R$ 23,00</li>
-              <li>Pizza de Maçã com Creme de Baunilha - R$ 26,00</li>
-              <li>Pizza de Romeu e Julieta (Goiabada com Queijo) - R$ 24,00</li>
-            </ul>
-          </div>
-          <div id="refrigerante" class="menu">
-            <!-- Conteúdo do cardápio de hambúrguer -->
-            <h2>Refrigerantes 3lts</h2>
-            <ul>
-              <li>Coca-Cola - R$ 12,00</li>
-              <li>Guaraná Antarctica - R$ 12,00</li>
-              <li>Fanta Laranja - R$ 12,00</li>
-            </ul>
-      </div>
-    </section>
-    <section id="delivery">
-      <div class="content">
-        <h2>DELIVERY</h2>
-        <p>Experimente a comodidade do nosso delivery!<br>Peça agora e saboreie a melhor pizza em casa. 🍕🚀</p>
-        <!-- Informações sobre a entrega -->
-      </div>
-    </section>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h1>Bem-vindo ao Meu Restaurante</h1>
+            <p>Texto de introdução ou imagens da sua página inicial.</p>
+        </section>
+    </main>
 
-    <section id="contact">
-      <div class="content">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para reservas ou qualquer dúvida.</p>
-        <form id="contact-form" action="#" method="post">
-          </  type="text" name="name" placeholder="Nome" required>
-          <input type="email" name="email" placeholder="E-mail" required>
-          <textarea name="message" placeholder="Mensagem" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
-  </main>
+    <footer>
+        <p>Todos os direitos reservados © 2023 Meu Restaurante</p>
+    </footer>
 
-  <footer>
-    <p>Todos os direitos reservados &copy; 2023 Restaurante Exemplo</p>
-  </footer>
-
-  <script src="src/script.js"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>
